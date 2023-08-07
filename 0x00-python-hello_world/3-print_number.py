@@ -1,3 +1,3 @@
-#!/bin/python3
+#!/bin/env python3
 number = 98
 print("%s Battery street" % number)
