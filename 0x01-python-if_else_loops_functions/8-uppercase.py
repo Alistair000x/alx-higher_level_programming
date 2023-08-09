@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
 def uppercase(str):
-    for ch in str:
-        if ord('a') <= ord(ch) <= ord('z'):
-            oset = ord('A') - ord('a')
-            uppercase_ch = chr(ord(ch) + oset)
-            print("{}".format(uppercase_ch), end="")
+    ns = ""
+    for j in str:
+        if 'a' <= j <= 'z':
+            ns += chr((ord(j) - ord('a')) + ord('A'))
         else:
-            print("{}".format(ch), end="")
-    print()
+            ns += j
+    print("{}".format(ns))
