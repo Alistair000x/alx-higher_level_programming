@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv
-    i = len(argv)
-    
-    if i == 1:
-        print(0)
-    elif i > 1:
-        total = 0
-        for j in range(1, i):
-            total += int(argv[j])
-        print("{:d}".format(total))
-
+    import sys
+    result = 0
+    for arg in sys.argv:
+        if arg != sys.argv[0]:
+            result += int(arg)
+    print(result)
