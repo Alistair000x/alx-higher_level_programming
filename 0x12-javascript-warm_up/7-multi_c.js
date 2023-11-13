@@ -10,4 +10,3 @@ const numberOfOAsInteger = Number(numberOfO);
 for (let i = 0; i < numberOfOAsInteger; i++) {
   console.log('C is fun');
 }
-return;
